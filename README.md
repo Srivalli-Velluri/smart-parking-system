@@ -1,4 +1,4 @@
-# Smart Parking System
+Smart Parking System
 A simple smart parking prototype using Arduino, IR sensors, Embedded C, and Python to monitor parking-slot availability.
 
 Project Overview
