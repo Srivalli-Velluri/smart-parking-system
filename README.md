@@ -57,3 +57,46 @@ smart-parking-system/
 │
 ├── README.md
 └── .gitignore
+## Arduino Code
+
+The Arduino program is available in:
+
+arduino/smart_parking.ino
+
+## Python Program
+
+The Python monitoring program is available in:
+
+python/parking_monitor.py
+
+### Python Dependency
+
+Install the required serial communication library:
+
+```bash
+pip install pyserial
+Before running the Python program, update the Arduino COM port in parking_monitor.py according to your system.
+
+Example:
+
+```python
+PORT = "COM3"
+BAUD_RATE = 9600
+## Circuit Diagram
+
+The circuit diagram shows the connection between the Arduino and IR sensors used for parking-slot detection.
+
+![Circuit Diagram](circuit/circuit_diagram.svg)
+
+## Project Status
+
+The Smart Parking System prototype has been developed using Arduino, IR sensors, Embedded C, and Python. The system can detect parking-slot occupancy and display the current availability through the Python monitoring program.
+
+## Future Enhancements
+
+- Add an LCD display for showing parking availability.
+- Add more parking slots and sensors.
+- Develop a web or mobile dashboard for remote monitoring.
+- Add cloud connectivity for real-time parking data.
+- Implement automatic parking-slot reservation.
+- Improve the system for large-scale parking areas.
